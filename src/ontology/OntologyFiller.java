@@ -54,10 +54,13 @@ public class OntologyFiller {
  
 	System.out.println("Number of films:" +  nList.getLength());
         
+        
         for(int i = 0; i < nList.getLength(); i++){
-            Element eElement = (Element)nList.item(i);//Element eElement = (Element)nList.item(0); //Element eElement = (Element)nList.item(i);
+            Element eElement = (Element)nList.item(i);
             addMovieToOntology(eElement);
         }
+        
+          
         
             
             
@@ -113,23 +116,25 @@ public class OntologyFiller {
         
         
         //abridged_cast
+        Cast movieCast = new Cast();
         NodeList cast = ((Element) movie.getElementsByTagName("abridged_cast").item(0)).getElementsByTagName("cast");
         for (int i = 0; i < cast.getLength(); i++) {
             Element actor = (Element) cast.item(i);
-            int actor_id = Integer.parseInt(actor.getElementsByTagName("id").item(0).getTextContent());
+            long actor_id = Long.parseLong(actor.getElementsByTagName("id").item(0).getTextContent());
             String actor_name = actor.getElementsByTagName("name").item(0).getTextContent();
 
-
+            ArrayList<String> charactersArray = new ArrayList<String>();
             NodeList characters = ((Element) actor.getElementsByTagName("characters").item(0)).getElementsByTagName("character");
             for (int k = 0; k < characters.getLength(); k++) {
 
                 String movie_character = characters.item(k).getTextContent();
-                
+                charactersArray.add(movie_character);
 
 
             }
-
+            movieCast.addActor(actor_name, actor_id, charactersArray);
         }
+        myOnt.addCastToMovieIndividual(movieIndvidual, movieCast, title, year);
         
         
         //abridged_directors

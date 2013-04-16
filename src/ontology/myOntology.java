@@ -36,6 +36,7 @@ public class myOntology {
     public final static String ONT_CLASS_AUDIENCE_RATING = "Audience_Rating";
     public final static String ONT_CLASS_CRITIC_RATING = "Critic_Rating";
     public final static String ONT_CLASS_STUDIO = "Studio";
+    public final static String ONT_CLASS_ACTOR = "Actor";
     
     
     
@@ -45,6 +46,8 @@ public class myOntology {
     public final static String ONT_OBP_CRITIC_RATING = "hasCriticRating";
     public final static String ONT_OBP_AUDIENCE_RATING = "hasAudienceRating";
     public final static String ONT_OBP_STUDIO = "hasStudio";
+    public final static String ONT_OBP_CAST = "hasCast";
+    public final static String ONT_OBP_ACTOR = "hasActor";
 
     
     
@@ -165,6 +168,7 @@ public class myOntology {
         movieIndv.addLiteral(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_CRITIC_SCORE), new Integer(critics_score));
         
         //critic rating
+        System.out.println(critics_rating + " ->" + title);
         Individual crIndv = myOntModel.getIndividual(ONTOLOGY_NS + normalizeString(critics_rating));
             if(crIndv == null){
                 crIndv = createIndividualFromClass(ONT_CLASS_CRITIC_RATING, ONTOLOGY_NS + normalizeString(critics_rating));
@@ -204,8 +208,39 @@ public class myOntology {
     }
     
     
+    public void addCastToMovieIndividual(Individual movieIndv, Cast cst, String movieTitle, int year){
+        
+        OntClass castClass = myOntModel.getOntClass(ONTOLOGY_NS + ONT_CLASS_CAST);
+        Individual castIndv = castClass.createIndividual(ONTOLOGY_NS + "cast_" + normalizeString(movieTitle) + "_(" + year +")");//same title, can be uses, but not in the same year
+        
+        
+        for(Actor a:cst.getAbrigedCast()){
+            
+            Individual actorIndv = myOntModel.getIndividual(ONTOLOGY_NS + normalizeString(a.getName()));
+            if(actorIndv == null){
+                actorIndv = createIndividualFromClass(ONT_CLASS_ACTOR, ONTOLOGY_NS + normalizeString(a.getName()));
+                actorIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_PERSON_NAME), a.getName());         
+            }
+            
+            for(String chr: a.getCharacters()){
+                String tmp =  chr + " " + "("+ movieTitle + " ("+ year+ ")" + ")";
+                actorIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS+ ONT_DTP_CHARACTER_NAME), 
+                        tmp);
+            }
+            
+            castIndv.addProperty(myOntModel.getProperty(ONTOLOGY_NS + ONT_OBP_ACTOR), actorIndv);
+            
+        }
+        
+        
+        
+        movieIndv.setPropertyValue(myOntModel.getProperty(ONTOLOGY_NS + ONT_OBP_CAST), castIndv);
+        
+    }
+    
+    
     private String normalizeString(String str){
-        return (str.replaceAll(" ", "_").toLowerCase()).replaceAll("&", "and");
+        return (str.replaceAll(" ", "_").toLowerCase()).replaceAll("&", "and").replace("\"", "");
     }
     
     

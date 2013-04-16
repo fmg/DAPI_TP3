@@ -41,7 +41,11 @@
 
     <!-- http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasAudienceRating -->
 
-    <ObjectProperty rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasAudienceRating"/>
+    <ObjectProperty rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasAudienceRating">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Audience_Rating"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasRating"/>
+    </ObjectProperty>
     
 
 
@@ -66,7 +70,11 @@
 
     <!-- http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasCriticRating -->
 
-    <ObjectProperty rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasCriticRating"/>
+    <ObjectProperty rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasCriticRating">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Critic_Rating"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasRating"/>
+    </ObjectProperty>
     
 
 
@@ -82,7 +90,18 @@
     <!-- http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasGenre -->
 
     <ObjectProperty rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasGenre">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Genre"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
         <inverseOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#isGenreOf"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasRating -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Rating"/>
     </ObjectProperty>
     
 
@@ -104,6 +123,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#isAudienceRatingOf -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#isAudienceRatingOf">
+        <inverseOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasAudienceRating"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#isRatingOf"/>
+    </ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#isCastOf -->
 
     <ObjectProperty rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#isCastOf">
@@ -118,6 +146,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#isCriticRatingOf -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#isCriticRatingOf">
+        <inverseOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasCriticRating"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#isRatingOf"/>
+    </ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#isDirectorOf -->
 
     <ObjectProperty rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#isDirectorOf">
@@ -129,6 +166,14 @@
     <!-- http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#isGenreOf -->
 
     <ObjectProperty rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#isGenreOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#isRatingOf -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#isRatingOf">
+        <inverseOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasRating"/>
+    </ObjectProperty>
     
 
 
@@ -417,9 +462,15 @@
     <Class rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie">
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#title"/>
+                <onProperty rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasRating"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Rating"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#movieID"/>
                 <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
-                <onDataRange rdf:resource="&xsd;string"/>
+                <onDataRange rdf:resource="&xsd;long"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -431,6 +482,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#title"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+                <onDataRange rdf:resource="&xsd;string"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
                 <onProperty rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasDirector"/>
                 <onClass rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Director"/>
                 <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</minQualifiedCardinality>
@@ -438,9 +496,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#movieID"/>
-                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
-                <onDataRange rdf:resource="&xsd;long"/>
+                <onProperty rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasGenre"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Genre"/>
             </Restriction>
         </rdfs:subClassOf>
     </Class>
