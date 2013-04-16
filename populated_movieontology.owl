@@ -1,0 +1,1344 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#animation">
+    <j.0:genreName>Animation</j.0:genreName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#walt_disney_pictures">
+    <j.0:studioName>Walt Disney Pictures</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasAudienceRating">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#the_lost_medallion:_the_adventures_of_billy_stone_(2011)">
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#independent_pictures"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-1</j.0:audienceScore>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#"/>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2011</j.0:year>
+    <j.0:criticConsensus>null</j.0:criticConsensus>
+    <j.0:title>The Lost Medallion: The Adventures of Billy Stone</j.0:title>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">67</j.0:audienceScore>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771319023</j.0:movieID>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">97</j.0:runtime>
+    <j.0:mpaaRating>PG</j.0:mpaaRating>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#action_and_adventure"/>
+    <j.0:synopsis>This faith-based, family, action/adventure film will thrill children and tweens, six through fourteen, their parents and grandparents. When Daniel Anderson visits a foster home to drop off some donations he is quickly roped into telling the kids a story. The story he tells is about Billy Stone and Allie, two teen-age-friends, who uncover a long- lost-medallion and then accidentally wish themselves back in time. Will the experience give them a new understanding of who they are and what their lives really mean? Daniel finishes his story to the foster children with the Truth about their tremendous value to God, who loves them and created them. The story not only changes the children, but is bound to change all who see the movie.</j.0:synopsis>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#actorID">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#ID"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Actor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#title">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#name"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#science_fiction_and_fantasy">
+    <j.0:genreName>Science Fiction &amp; Fantasy</j.0:genreName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#gangster_squad_(2013)">
+    <j.0:title>Gangster Squad</j.0:title>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#warner_bros."/>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">32</j.0:audienceScore>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#drama"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">63</j.0:audienceScore>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">110</j.0:runtime>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:criticConsensus>Though it's stylish and features a talented cast, Gangster Squad suffers from lackluster writing, underdeveloped characters, and an excessive amount of violence.</j.0:criticConsensus>
+    <j.0:mpaaRating>R</j.0:mpaaRating>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#rotten"/>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771256131</j.0:movieID>
+    <j.0:synopsis>Los Angeles, 1949. Ruthless, Brooklyn-born mob king Mickey Cohen (Sean Penn) runs the show in this town, reaping the ill-gotten gains from the drugs, the guns, the prostitutes and-if he has his way-every wire bet placed west of Chicago. And he does it all with the protection of not only his own paid goons, but also the police and the politicians who are under his control. It's enough to intimidate even the bravest, street-hardened cop...except, perhaps, for the small, secret crew of LAPD outsiders led by Sgt. John O'Mara (Josh Brolin) and Jerry Wooters (Ryan Gosling), who come together to try to tear Cohen's world apart. -- (C) Warner Bros</j.0:synopsis>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#safe_haven_(2013)">
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#special_interest"/>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">770893918</j.0:movieID>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</j.0:audienceScore>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#drama"/>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#rotten"/>
+    <j.0:criticConsensus>Schmaltzy, predictable, and melodramatic, Safe Haven also suffers from a ludicrous plot twist, making for a particularly ignominious Nicholas Sparks adaptation.</j.0:criticConsensus>
+    <j.0:title>Safe Haven</j.0:title>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">71</j.0:audienceScore>
+    <j.0:mpaaRating>PG-13</j.0:mpaaRating>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">115</j.0:runtime>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#romance"/>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:synopsis>An affirming and suspenseful story about a young woman's struggle to love again, Safe Haven is based on the novel from Nicholas Sparks, the best-selling author behind the hit films The Notebook and Dear John. When a mysterious young woman arrives in a small North Carolina town, her reluctance to join the tight knit community raises questions about her past. Slowly, she begins putting down roots, and gains the courage to start a relationship with Alex, a widowed store owner with two young children. But dark secrets intrude on her new life with such terror that she is forced to rediscover the meaning of sacrifice and rely on the power of love in this deeply moving romantic thriller.</j.0:synopsis>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#relativity_media"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#paramount_pictures/mgm">
+    <j.0:studioName>Paramount Pictures/MGM</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasDirector">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Director"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#paramount_studios">
+    <j.0:studioName>Paramount Studios</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#skyfall_(2012)">
+    <j.0:synopsis>In Skyfall, Bond's loyalty to M is tested as her past comes back to haunt her. As MI6 comes under attack, 007 must track down and destroy the threat, no matter how personal the cost. -- (C) Official Site</j.0:synopsis>
+    <j.0:title>Skyfall</j.0:title>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">92</j.0:audienceScore>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2012</j.0:year>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#action_and_adventure"/>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">145</j.0:runtime>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#certified_fresh"/>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#mgm"/>
+    <j.0:criticConsensus>Sam Mendes brings Bond surging back with a smart, sexy, riveting action thriller that qualifies as one of the best 007 films to date.</j.0:criticConsensus>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">88</j.0:audienceScore>
+    <j.0:mpaaRating>PG-13</j.0:mpaaRating>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">770680844</j.0:movieID>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#mystery_and_suspense"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#snitch_(2013)">
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#mystery_and_suspense"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:criticConsensus>Though it features one of Dwayne Johnson's more thoughtful performances, the presentation of Snitch's underlying message is muddled by lackluster storytelling and some tonal inconsistencies.</j.0:criticConsensus>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">95</j.0:runtime>
+    <j.0:title>Snitch</j.0:title>
+    <j.0:synopsis>In the fast-paced action thriller SNITCH, Dwayne Johnson stars as a father whose teenage son is wrongly accused of a drug distribution crime and is looking at a mandatory minimum prison sentence of 10 years. Desperate and determined to rescue his son at all costs, he makes a deal with the U.S. attorney to work as an undercover informant and infiltrate a drug cartel on a dangerous mission -- risking everything, including his family and his own life. (c) Summit</j.0:synopsis>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#rotten"/>
+    <j.0:mpaaRating>PG-13</j.0:mpaaRating>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#lionsgate/summit_entertainment"/>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">56</j.0:audienceScore>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">71</j.0:audienceScore>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#action_and_adventure"/>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771316320</j.0:movieID>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#drama"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasGenre">
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#isGenreOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#les_miserables_(2012)">
+    <j.0:mpaaRating>PG-13</j.0:mpaaRating>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771253949</j.0:movieID>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</j.0:audienceScore>
+    <j.0:title>Les Miserables</j.0:title>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#drama"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">81</j.0:audienceScore>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#universal_pictures"/>
+    <j.0:criticConsensus>Impeccably mounted but occasionally bombastic, Les Miserables largely succeeds thanks to bravura performances from its distinguished cast.</j.0:criticConsensus>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#fresh"/>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">158</j.0:runtime>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#musical_and_performing_arts"/>
+    <j.0:synopsis>Set against the backdrop of 19th-century France, Les Miserables tells an enthralling story of broken dreams and unrequited love, passion, sacrifice and redemption-a timeless testament to the survival of the human spirit. Jackman plays ex-prisoner Jean Valjean, hunted for decades by the ruthless policeman Javert (Crowe) after he breaks parole. When Valjean agrees to care for factory worker Fantine's (Hathaway) young daughter, Cosette, their lives change forever. In December 2012, the world's longest-running musical brings its power to the big screen in Tom Hooper's sweeping and spectacular interpretation of Victor Hugo's epic tale. -- (C) Universal</j.0:synopsis>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2012</j.0:year>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#open_road_films">
+    <j.0:studioName>Open Road Films</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#focus_features">
+    <j.0:studioName>Focus Features</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Critic"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasCritic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#rcr_distribution">
+    <j.0:studioName>RCR Distribution</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio">
+    <rdfs:subClassOf rdf:nodeID="A1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#life_of_pi_(2012)">
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">770673482</j.0:movieID>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#certified_fresh"/>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">127</j.0:runtime>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#action_and_adventure"/>
+    <j.0:mpaaRating>PG</j.0:mpaaRating>
+    <j.0:title>Life of Pi</j.0:title>
+    <j.0:criticConsensus>A 3D adaptation of a supposedly "unfilmable" book, Ang Lee's Life of Pi achieves the near impossible -- it's an astonishing technical achievement that's also emotionally rewarding.</j.0:criticConsensus>
+    <j.0:synopsis>Director Ang Lee creates a groundbreaking movie event about a young man who survives a disaster at sea and is hurtled into an epic journey of adventure and discovery. While cast away, he forms an amazing and unexpected connection with another survivor...a fearsome Bengal tiger. -- (C) Official Site</j.0:synopsis>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#drama"/>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2012</j.0:year>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">88</j.0:audienceScore>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">87</j.0:audienceScore>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#20th_century_fox"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie">
+    <rdfs:subClassOf rdf:nodeID="A2"/>
+    <rdfs:subClassOf rdf:nodeID="A3"/>
+    <rdfs:subClassOf rdf:nodeID="A4"/>
+    <rdfs:subClassOf rdf:nodeID="A5"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#title"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#universal_pictures">
+    <j.0:studioName>Universal Pictures</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Genre">
+    <rdfs:subClassOf rdf:nodeID="A6"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#special_interest">
+    <j.0:genreName>Special Interest</j.0:genreName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#dark_skies_(2013)">
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">95</j.0:runtime>
+    <j.0:mpaaRating>PG-13</j.0:mpaaRating>
+    <j.0:criticConsensus>null</j.0:criticConsensus>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:synopsis>From the producer of Paranormal Activity, Insidious, and Sinister comes Dark Skies: a supernatural thriller that follows a young family living in the suburbs. As husband and wife Daniel and Lacey Barret witness an escalating series of disturbing events involving their family, their safe and peaceful home quickly unravels. When it becomes clear that the Barret family is being targeted by an unimaginably terrifying and deadly force, Daniel and Lacey take matters in their own hands to solve the mystery of what is after their family. Written and Directed by Scott Stewart (PRIEST, LEGION) Starring: Keri Russell, Josh Hamilton, Dakota Goyo, Kadan Rockett and J.K. Simmons (c) Weinstein</j.0:synopsis>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#the_weinstein_company"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</j.0:audienceScore>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">64</j.0:audienceScore>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#mystery_and_suspense"/>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:title>Dark Skies</j.0:title>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#rotten"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#horror"/>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771317035</j.0:movieID>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#">
+    <j.0:ratingName></j.0:ratingName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Critic_Rating"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#the_impossible_(2012)">
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">85</j.0:audienceScore>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2012</j.0:year>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#drama"/>
+    <j.0:synopsis>Maria, Henry and their three sons begin their winter vacation in Thailand, looking forward to a few days in tropical paradise. But on the morning of December 26th, as the family relaxes around the pool after their Christmas festivities the night before, a terrifying roar rises up from the center of the earth. As Maria freezes in fear, a huge wall of black water races across the hotel grounds toward her.</j.0:synopsis>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">107</j.0:runtime>
+    <j.0:title>The Impossible</j.0:title>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#action_and_adventure"/>
+    <j.0:mpaaRating>PG-13</j.0:mpaaRating>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#certified_fresh"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">81</j.0:audienceScore>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#lionsgate_films"/>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771312396</j.0:movieID>
+    <j.0:criticConsensus>The screenplay isn't quite as powerful as the direction or the acting, but with such an astonishing real-life story at its center, The Impossible is never less than compelling.</j.0:criticConsensus>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#one_earth_productions">
+    <j.0:studioName>One Earth Productions</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#isCriticOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#emperor_(2013)">
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:title>Emperor</j.0:title>
+    <j.0:criticConsensus>Despite a typically strong performance from Tommy Lee Jones, Emperor does little with its fascinating historical palate, and is instead bogged down in a cliched romantic subplot.</j.0:criticConsensus>
+    <j.0:mpaaRating>PG-13</j.0:mpaaRating>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771315558</j.0:movieID>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#drama"/>
+    <j.0:synopsis>Matthew Fox (WORLD WAR Z, I, ALEX CROSS, "Lost") joins with Academy Award (R) winner Tommy Lee Jones (LINCOLN, NO COUNTRY FOR OLD MEN, THE FUGITIVE, HOPE SPRINGS), newcomer Eriko Hatsune and award-winning Japanese star Toshiyuki Nishida (GET UP!, TSURIBAKA NISSHI 14, TSURIBAKA NISSHI 6, GAKKO, DUN-HUANG) to bring to life the American occupation of Japan in the perilous and unpredictable days just after Emperor Hirohito's World War II surrender. As General Douglas MacArthur (Jones) suddenly finds himself the de facto ruler of a foreign nation, he assigns an expert in Japanese culture - and psychological warfare - General Bonner Fellers (Fox), to covertly investigate the looming question hanging over the country: should the Japanese Emperor, worshiped by his people but accused of war crimes, be punished or saved? Caught between the high-wire political intrigue of his urgent mission and his own impassioned search for the mysterious school teacher (Hatsune) who first drew him to Japan, Fellers can be certain only that the tricky subterfuge about to play out will forever change the history of two nations and his heart. (c) Roadside Attractions</j.0:synopsis>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#rotten"/>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#roadside_attractions"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">35</j.0:audienceScore>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">67</j.0:audienceScore>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">98</j.0:runtime>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#documentary">
+    <j.0:genreName>Documentary</j.0:genreName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#rotten">
+    <j.0:ratingName>Rotten</j.0:ratingName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Critic_Rating"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#columbia_pictures">
+    <j.0:studioName>Columbia Pictures</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#roadside_attractions">
+    <j.0:studioName>Roadside Attractions</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#kids_and_family">
+    <j.0:genreName>Kids &amp; Family</j.0:genreName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#name"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Critic_Rating">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Rating"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#somebody_up_there_likes_me_(2013)">
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">54</j.0:audienceScore>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#rotten"/>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">76</j.0:runtime>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">86</j.0:audienceScore>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#tribeca_film"/>
+    <j.0:synopsis>Byington creates an offbeat energy by brilliantly pairing established actors and non-actors in this comedic fable about a man watching his life fly by. Max (Keith Poulson), along with his best friend Sal (Nick Offerman, "Parks &amp; Recreation") and the woman they both adore, Lyla (Jess Weixler, TEETH), stumble through thirty-five years of seemingly mandatory but unfulfilling entanglements. (c) Tribeca Film</j.0:synopsis>
+    <j.0:mpaaRating>Unrated</j.0:mpaaRating>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#comedy"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:title>Somebody Up There Likes Me</j.0:title>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771271119</j.0:movieID>
+    <j.0:criticConsensus>null</j.0:criticConsensus>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#searching_for_sugar_man_(2012)">
+    <j.0:synopsis>Searching for Sugar Man tells the incredible true story of Rodriguez, the greatest '70s rock icon who never was. Discovered in a Detroit bar in the late '60s by two celebrated producers struck by his soulful melodies and prophetic lyrics, they recorded an album which they believed would secure his reputation as the greatest recording artist of his generation. In fact, the album bombed and the singer disappeared into obscurity amid rumors of a gruesome on-stage suicide. But a bootleg recording found its way into apartheid South Africa and, over the next two decades, he became a phenomenon. The film follows the story of two South African fans who set out to find out what really happened to their hero. Their investigation leads them to a story more extraordinary than any of the existing myths about the artist known as Rodriguez. -- (C) Sony Pictures Classics</j.0:synopsis>
+    <j.0:criticConsensus>A fascinating portrait of a forgotten musical pioneer, Searching for Sugar Man is by turns informative and mysterious.</j.0:criticConsensus>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#documentary"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#musical_and_performing_arts"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">94</j.0:audienceScore>
+    <j.0:title>Searching for Sugar Man</j.0:title>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2012</j.0:year>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#sony_pictures_classics"/>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771266704</j.0:movieID>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:mpaaRating>PG-13</j.0:mpaaRating>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">85</j.0:runtime>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#certified_fresh"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">96</j.0:audienceScore>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#girl_rising_(2013)">
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:mpaaRating>PG-13</j.0:mpaaRating>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#fresh"/>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">101</j.0:runtime>
+    <j.0:criticConsensus>null</j.0:criticConsensus>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771323816</j.0:movieID>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#gathr_films"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#documentary"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#special_interest"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</j.0:audienceScore>
+    <j.0:synopsis>10x10 is a social action organization seeking educational equality for underprivileged girls across the globe. Director Richard Robbins tells the moving stories of several of these girls, with help from some of the most recognizable female voices of today.</j.0:synopsis>
+    <j.0:title>Girl Rising</j.0:title>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90</j.0:audienceScore>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Cast"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasCast"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#django_unchained_(2012)">
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">88</j.0:audienceScore>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771245718</j.0:movieID>
+    <j.0:synopsis>Set in the South two years before the Civil War, Django Unchained stars Jamie Foxx as Django, a slave whose brutal history with his former owners lands him face-to-face with German-born bounty hunter Dr. King Schultz (Christoph Waltz). Schultz is on the trail of the murderous Brittle brothers, and only Django can lead him to his bounty. Honing vital hunting skills, Django remains focused on one goal: finding and rescuing Broomhilda (Kerry Washington), the wife he lost to the slave trade long ago. Django and Schultz's search ultimately leads them to Calvin Candie (Leonardo DiCaprio), the proprietor of "Candyland," an infamous plantation. Exploring the compound under false pretenses, Django and Schultz arouse the suspicion of Stephen (Samuel L. Jackson), Candie's trusted house slave. -- (C) Weinstein</j.0:synopsis>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2012</j.0:year>
+    <j.0:title>Django Unchained</j.0:title>
+    <j.0:criticConsensus>Bold, bloody, and stylistically daring, Django Unchained is another incendiary masterpiece from Quentin Tarantino.</j.0:criticConsensus>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#the_weinstein_co."/>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">166</j.0:runtime>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#western"/>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:mpaaRating>R</j.0:mpaaRating>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#certified_fresh"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">94</j.0:audienceScore>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#drama"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasActor">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Cast"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Actor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright">
+    <j.0:ratingName>Upright</j.0:ratingName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Audience_Rating"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#greedy_lying_bastards_(2013)">
+    <j.0:criticConsensus>It's not particularly subtle, but Greedy Lying Bastards is effective in questioning the motives of climate change deniers.</j.0:criticConsensus>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">69</j.0:audienceScore>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#documentary"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#special_interest"/>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#fresh"/>
+    <j.0:title>Greedy Lying Bastards</j.0:title>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">89</j.0:runtime>
+    <j.0:synopsis>Hurricane Sandy. Wildfires in the West. "Brown-Outs" in the East. Farmers losing crops to the worst drought since the Dust Bowl. Climate change is no longer a prediction for the future, but a startling reality of today. Yet, as evidence of our changing climate mounts and the scientific consensus proves human causation, there continues to be no political action to thwart the warming of our planet. "Greedy Lying Bastards" investigates the reason behind stalled efforts to tackle climate change despite consensus in the scientific community that it is not only a reality but also a growing problem placing us on the brink of disaster. The film details the people and organizations casting doubt on climate science and claims that greenhouse gases are not affected by human behavior. From the Koch Brothers to ExxonMobil, to prominent Senators and Justices, this provocative expose unravels the layers of deceit threatening U.S. democracy. -- (C) Official Site</j.0:synopsis>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">74</j.0:audienceScore>
+    <j.0:mpaaRating>PG-13</j.0:mpaaRating>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#one_earth_productions"/>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771265290</j.0:movieID>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#warner_bros._pictures">
+    <j.0:studioName>Warner Bros. Pictures</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasStudio">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#movieID">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#ID"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#rise_of_the_guardians_(2012)">
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#certified_fresh"/>
+    <j.0:criticConsensus>A sort of Avengers for the elementary school set, Rise of the Guardians is wonderfully animated and briskly paced, but it's only so-so in the storytelling department.</j.0:criticConsensus>
+    <j.0:title>Rise of the Guardians</j.0:title>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#action_and_adventure"/>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771229644</j.0:movieID>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">82</j.0:audienceScore>
+    <j.0:synopsis>Rise of the Guardians is an epic adventure that tells the story of a group of heroes - each with extraordinary abilities. When an evil spirit known as Pitch lays down the gauntlet to take over the world, the immortal Guardians must join forces for the first time to protect the hopes, beliefs and imagination of children all over the world. -- (C) Official Site</j.0:synopsis>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#kids_and_family"/>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2012</j.0:year>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#paramount_studios"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#animation"/>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">97</j.0:runtime>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">74</j.0:audienceScore>
+    <j.0:mpaaRating>PG</j.0:mpaaRating>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#wreck-it_ralph_(2012)">
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">86</j.0:audienceScore>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#comedy"/>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:synopsis>Ralph (John C. Reilly) is tired of being overshadowed by Fix-It Felix (Jack McBrayer), the "good guy" star of their game who always gets to save the day. But after decades doing the same thing and seeing all the glory go to Felix, Ralph decides he's tired of playing the role of a bad guy. He takes matters into his own massive hands and sets off on a game-hopping journey across the arcade through every generation of video games to prove he's got what it takes to be a hero. On his quest, he meets the tough-as-nails Sergeant Calhoun (Jane Lynch) from the first-person action game Hero's Duty. But it's the feisty misfit Vanellope von Schweetz (Sarah Silverman) from the candy-coated cart racing game, Sugar Rush, whose world is threatened when Ralph accidentally unleashes a deadly enemy that threatens the entire arcade. Will Ralph realize his dream and save the day before it's too late? -- (C) Disney</j.0:synopsis>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">92</j.0:runtime>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#animation"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2012</j.0:year>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771221512</j.0:movieID>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">89</j.0:audienceScore>
+    <j.0:title>Wreck-it Ralph</j.0:title>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#certified_fresh"/>
+    <j.0:criticConsensus>Equally entertaining for both kids and parents old enough to catch the references, Wreck-It Ralph is a clever, colorful adventure built on familiar themes and joyful nostalgia.</j.0:criticConsensus>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#walt_disney_pictures"/>
+    <j.0:mpaaRating>PG</j.0:mpaaRating>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#kids_and_family"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#monsters,_inc._3d_(2012)">
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">84</j.0:audienceScore>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#science_fiction_and_fantasy"/>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">92</j.0:runtime>
+    <j.0:synopsis>After exploring the worlds of toys and bugs in the two Toy Story films and A Bug's Life, the award-winning computer animation company Pixar delves into the realm of monsters with its fourth feature. Hulking, blue-furred behemoth James P. "Sully" Sullivan (John Goodman) and his one-eyed assistant Mike Wazowski (Billy Crystal) are employed by Monsters, Inc., a scream processing factory. It seems that the denizens of their realm thrive on the screams of kids spooked by monsters lurking under their beds and in their closets. It's the job of Sully, Mike, and their co-workers, including sarcastic Randall Boggs (Steve Buscemi), crab-like CEO Henry J. Waternoose (James Coburn), and lovely snake-headed receptionist Celia (Jennifer Tilly) to keep the frights flowing. When Sully and Mike are followed back into the monster world by a very unafraid little human girl named Boo (Mary Gibbs), they are exiled to her universe, where they discover that such a modern-day mythological specimen as the Abominable Snowman is a fellow refugee. ~ Karl Williams, Rovi</j.0:synopsis>
+    <j.0:title>Monsters, Inc. 3D</j.0:title>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">96</j.0:audienceScore>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#comedy"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#animation"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#kids_and_family"/>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">9382</j.0:movieID>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#walt_disney_pictures"/>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#certified_fresh"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:criticConsensus>Even though Monsters, Inc lacks the sophistication of the Toy Story series, it is a still delight for children of all ages.</j.0:criticConsensus>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2012</j.0:year>
+    <j.0:mpaaRating>G</j.0:mpaaRating>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#music_box_films">
+    <j.0:studioName>Music Box Films</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Critic">
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Director"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#year">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#bless_me,_ultima_(2013)">
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#arenas_entertainment"/>
+    <j.0:title>Bless Me, Ultima</j.0:title>
+    <j.0:synopsis>Director Carl Franklin (One False Move, Devil in a Blue Dress) helmed this adaptation of Rudolfo Anaya's controversial novel about a young boy and the enigmatic healer who opens his eyes to the wonders of the spiritual realm. New Mexico: the early '40s. As the entire world is plunged into war for a second time, Antonio Marez (Luke Ganalon) grapples with the harsh realities all around him. His life is forever changed by the sudden arrival of Ultima (Miriam Colon), a woman with supernatural healing powers, who has come to his family on a mission of kindness. As Ultima inspires Antonio to question authority and see the world from a new perspective, the young boy witnesses a series of seemingly impossible events that have a profound impact on his concepts of divinity and fate. ~ Jason Buchanan, Rovi</j.0:synopsis>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#fresh"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#drama"/>
+    <j.0:mpaaRating>PG-13</j.0:mpaaRating>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771315852</j.0:movieID>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:criticConsensus>null</j.0:criticConsensus>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">102</j.0:runtime>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">81</j.0:audienceScore>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">71</j.0:audienceScore>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#isGenreOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasCriticRating">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#stoker_(2013)">
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">73</j.0:audienceScore>
+    <j.0:title>Stoker</j.0:title>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#fresh"/>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#fox_searchlight_pictures"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</j.0:audienceScore>
+    <j.0:criticConsensus>Its script doesn't quite carry the dramatic heft of his earlier work, but Park Chan-wook's Stoker showcases his eye for sumptuous imagery and his affection for dark, atmospheric narratives populated by mysterious characters.</j.0:criticConsensus>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#mystery_and_suspense"/>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771312246</j.0:movieID>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">98</j.0:runtime>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#horror"/>
+    <j.0:synopsis>After India's father dies in an auto accident, her Uncle Charlie, who she never knew existed, comes to live with her and her emotionally unstable mother. Soon after his arrival, she comes to suspect this mysterious, charming man has ulterior motives, but instead of feeling outrage or horror, this friendless girl becomes increasingly infatuated with him.</j.0:synopsis>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#drama"/>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:mpaaRating>R</j.0:mpaaRating>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#parental_guidance_(2012)">
+    <j.0:criticConsensus>Parental Guidance is sweet but milquetoast, an inoffensive trifle that's blandly predictable.</j.0:criticConsensus>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2012</j.0:year>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">105</j.0:runtime>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#20th_century_fox"/>
+    <j.0:mpaaRating>PG</j.0:mpaaRating>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">66</j.0:audienceScore>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771257655</j.0:movieID>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#comedy"/>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#rotten"/>
+    <j.0:synopsis>Old school grandfather Artie (Billy Crystal), who is accustomed to calling the shots, meets his match when he and his eager-to-please wife Diane (Bette Midler) agree to babysit their three grandkids when their type-A helicopter parents (Marisa Tomei, Tom Everett Scott) go away for work. But when 21st century problems collide with Artie and Diane's old school methods of tough rules, lots of love and old-fashioned games, it's learning to bend - and not holding your ground - that binds a family together</j.0:synopsis>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:title>Parental Guidance</j.0:title>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">19</j.0:audienceScore>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Director"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasDirector"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#lionsgate_films">
+    <j.0:studioName>Lionsgate Films</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#to_the_arctic_(2012)">
+    <j.0:mpaaRating>G</j.0:mpaaRating>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">67</j.0:audienceScore>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771267753</j.0:movieID>
+    <j.0:synopsis>An extraordinary journey to the top of the world, the documentary adventure To The Arctic tells the ultimate tale of survival. Narrated by Meryl Streep, the film takes audiences on a never-before-experienced journey into the lives of a mother polar bear and her twin seven-month-old cubs as they navigate the changing Arctic wilderness they call home. Captivating, adventurous and intimate footage brings moviegoers up close and personal with this family's struggle to survive in a frigid environment of melting ice, immense glaciers, spectacular waterfalls, and majestic snow-bound peaks. -- (C) Warner Bros</j.0:synopsis>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2012</j.0:year>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#warner_bros._pictures"/>
+    <j.0:criticConsensus>null</j.0:criticConsensus>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#fresh"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">66</j.0:audienceScore>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#documentary"/>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">40</j.0:runtime>
+    <j.0:title>To the Arctic</j.0:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#drama">
+    <j.0:genreName>Drama</j.0:genreName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#studioName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#name"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#isCastOf">
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasCast"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#criticConsensus">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#gathr_films">
+    <j.0:studioName>Gathr Films</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#jack_the_giant_slayer_(2013)">
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">62</j.0:audienceScore>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">114</j.0:runtime>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:criticConsensus>It's enthusiastically acted and reasonably fun, but Jack the Giant Slayer is also overwhelmed by digital effects and a bland, impersonal story.</j.0:criticConsensus>
+    <j.0:title>Jack the Giant Slayer</j.0:title>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#drama"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#action_and_adventure"/>
+    <j.0:synopsis>"Jack the Giant Slayer" tells the story of an ancient war that is reignited when a young farmhand unwittingly opens a gateway between our world and a fearsome race of giants. Unleashed on the Earth for the first time in centuries, the giants strive to reclaim the land they once lost, forcing the young man, Jack (Nicholas Hoult) into the battle of his life to stop them. Fighting for a kingdom, its people, and the love of a brave princess, he comes face to face with the unstoppable warriors he thought only existed in legend-and gets the chance to become a legend himself.-- (C) Warner Bros</j.0:synopsis>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#rotten"/>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">51</j.0:audienceScore>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#warner_bros."/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#science_fiction_and_fantasy"/>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771189410</j.0:movieID>
+    <j.0:mpaaRating>PG-13</j.0:mpaaRating>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#runtime">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#sony_pictures_classics">
+    <j.0:studioName>Sony Pictures Classics</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#lore_(2012)">
+    <j.0:synopsis>Left to fend for themselves after their SS officer father and mother, a staunch Nazi believer, are interred by the victorious Allies at the end of World War II, five German children undertake a harrowing journey that exposes them to the reality and consequences of their parents' actions. Led by the eldest sibling, 14-year old Lore (striking newcomer Saskia Rosendahl), they set out on a harrowing journey across a devastated country to reach their grandmother in the north. After meeting the charismatic Thomas, a mysterious young refugee, Lore soon finds her world shattered by feelings of both hatred and desire as she must learn to trust the one person she has always been taught to hate in order to survive. Lush cinematography and an evocative, haunting mood infuse this unconventional take on the Holocaust legacy with unforgettable impact. (c) Music Box</j.0:synopsis>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#drama"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#art_house_and_international"/>
+    <j.0:mpaaRating>Unrated</j.0:mpaaRating>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#music_box_films"/>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">108</j.0:runtime>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#certified_fresh"/>
+    <j.0:title>Lore</j.0:title>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2012</j.0:year>
+    <j.0:criticConsensus>null</j.0:criticConsensus>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">93</j.0:audienceScore>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771308195</j.0:movieID>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">75</j.0:audienceScore>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#isDirectorOf">
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasDirector"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#the_gatekeepers_(2013)">
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#special_interest"/>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#certified_fresh"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#documentary"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">92</j.0:audienceScore>
+    <j.0:title>The Gatekeepers</j.0:title>
+    <j.0:criticConsensus>Strikingly stark, brutally honest, and rivetingly assembled, The Gatekeepers offers essential perspective on a seemingly intractable war from some of the men who fought it.</j.0:criticConsensus>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771315180</j.0:movieID>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#sony_pictures_classics"/>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:synopsis>Charged with overseeing Israel's war on terror-both Palestinian and Jewish- the head of the Shin Bet, Israel's secret service is present at the crossroad of every decision made. For the first time ever six former heads of the agency agreed to share their insights and reflect publicly on their actions and decisions. The Gatekeepers offers an exclusive account of the sum of their success and failures. It validates the reasons that each man individually and the six as a group came to reconsider their hard-line positions and advocate a conciliatory approach toward their enemies based on a two-state solution. (c) Sony Classics</j.0:synopsis>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">97</j.0:runtime>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">83</j.0:audienceScore>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:mpaaRating>PG-13</j.0:mpaaRating>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#independent_pictures">
+    <j.0:studioName>Independent Pictures</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#fresh">
+    <j.0:ratingName>Fresh</j.0:ratingName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Critic_Rating"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#produced">
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasStudio"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#movieID"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#paramount_pictures">
+    <j.0:studioName>Paramount Pictures</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#criticScore">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#score"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#the_hobbit:_an_unexpected_journey_(2012)">
+    <j.0:criticConsensus>Peter Jackson's return to Middle-earth is an earnest, visually resplendent trip, but the film's deliberate pace robs the material of some of its majesty.</j.0:criticConsensus>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">84</j.0:audienceScore>
+    <j.0:synopsis>The Hobbit: An Unexpected Journey follows title character Bilbo Baggins, who is swept into an epic quest to reclaim the lost Dwarf Kingdom of Erebor, which was long ago conquered by the dragon Smaug. Approached out of the blue by the wizard Gandalf the Grey, Bilbo finds himself joining a company of thirteen dwarves led by the legendary warrior Thorin Oakenshield. Although their goal lies to the East and the wastelands of the Lonely Mountain, first they must escape the goblin tunnels, where Bilbo meets the creature that will change his life forever... Gollum. Here, alone with Gollum, on the shores of an underground lake, the unassuming Bilbo Baggins not only discovers depths ofguile and courage that surprise even him, he also gains possession of Gollum's "precious" ...a simple, gold ring that is tied to the fate of all Middle-earth in ways Bilbo cannot begin to know. -- (C) Warner Bros</j.0:synopsis>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#warner_bros."/>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2012</j.0:year>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">170</j.0:runtime>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:title>The Hobbit: An Unexpected Journey</j.0:title>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">65</j.0:audienceScore>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">770675766</j.0:movieID>
+    <j.0:mpaaRating>PG-13</j.0:mpaaRating>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#fresh"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#action_and_adventure"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#science_fiction_and_fantasy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#ratingName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#name"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Rating"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#the_weinstein_co.">
+    <j.0:studioName>The Weinstein Co.</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#mama_(2013)">
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#art_house_and_international"/>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:criticConsensus>If you're into old-school scares over cheap gore, you'll be able to get over Mama's confusing script and contrived plot devices.</j.0:criticConsensus>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#horror"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">61</j.0:audienceScore>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#universal_pictures"/>
+    <j.0:title>Mama</j.0:title>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</j.0:runtime>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">64</j.0:audienceScore>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#fresh"/>
+    <j.0:synopsis>Guillermo del Toro presents Mama, a supernatural thriller that tells the haunting tale of two little girls who disappeared into the woods the day that their mother was murdered. When they are rescued years later and begin a new life, they find that someone or something still wants to come tuck them in at night. The day their father killed their mother, sisters Victoria and Lilly vanished near their suburban neighborhood. For five long years, their Uncle Lucas (Nikolaj Coster-Waldau) and his girlfriend, Annabel (Jessica Chastain), have been madly searching for them. But when, incredibly, the kids are found alive in a decrepit cabin, the couple wonders if the girls are the only guests they have welcomed into their home. (c)Universal</j.0:synopsis>
+    <j.0:mpaaRating>PG-13</j.0:mpaaRating>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771313372</j.0:movieID>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#mystery_and_suspense">
+    <j.0:genreName>Mystery &amp; Suspense</j.0:genreName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#score">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Review"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Rating"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#art_house_and_international">
+    <j.0:genreName>Art House &amp; International</j.0:genreName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#mgm">
+    <j.0:studioName>MGM</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#silver_linings_playbook_(2012)">
+    <j.0:criticConsensus>Silver Linings Playbook walks a tricky thematic tightrope, but David O. Russell's sensitive direction and some sharp work from a talented cast gives it true balance.</j.0:criticConsensus>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">88</j.0:audienceScore>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">92</j.0:audienceScore>
+    <j.0:title>Silver Linings Playbook</j.0:title>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">120</j.0:runtime>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2012</j.0:year>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#comedy"/>
+    <j.0:synopsis>Life doesn't always go according to plan. Pat Solatano (Bradley Cooper) has lost everything -- his house, his job, and his wife. He now finds himself living back with his mother (Jacki Weaver) and father (Robert DeNiro) after spending eight months is a state institution on a plea bargain. Pat is determined to rebuild his life, remain positive and reunite with his wife, despite the challenging circumstances of their separation. All Pat's parents want is for him to get back on his feet-and to share their family's obsession with the Philadelphia Eagles football team. When Pat meets Tiffany (Jennifer Lawrence), a mysterious girl with problems of her own, things get complicated. Tiffany offers to help Pat reconnect with his wife, but only if he'll do something very important for her in return. As their deal plays out, an unexpected bond begins to form between them, and silver linings appear in both of their lives. -- (C) Weinstein</j.0:synopsis>
+    <j.0:mpaaRating>R</j.0:mpaaRating>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771253886</j.0:movieID>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#certified_fresh"/>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#the_weinstein_company"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#arenas_entertainment">
+    <j.0:studioName>Arenas Entertainment</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#side_effects_(2013)">
+    <j.0:mpaaRating>R</j.0:mpaaRating>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#open_road_films"/>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">106</j.0:runtime>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#drama"/>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:title>Side Effects</j.0:title>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#certified_fresh"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:synopsis>SIDE EFFECTS is a provocative thriller about Emily and Martin (Rooney Mara and Channing Tatum), a successful New York couple whose world unravels when a new drug prescribed by Emily's psychiatrist (Jude Law) - intended to treat anxiety - has unexpected side effects. (c) Official FB</j.0:synopsis>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771305509</j.0:movieID>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">85</j.0:audienceScore>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">76</j.0:audienceScore>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#mystery_and_suspense"/>
+    <j.0:criticConsensus>A smart, clever thriller with plenty of disquieting twists, Side Effects is yet another assured effort from director Steven Soderbergh.</j.0:criticConsensus>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#beautiful_creatures_(2013)">
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#drama"/>
+    <j.0:mpaaRating>PG-13</j.0:mpaaRating>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771269779</j.0:movieID>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">45</j.0:audienceScore>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#spilled"/>
+    <j.0:title>Beautiful Creatures</j.0:title>
+    <j.0:synopsis>A supernatural love story set in the South, "Beautiful Creatures" tells the tale of two star-crossed lovers: Ethan (Alden Ehrenreich), a young man longing to escape his small town, and Lena (Alice Englert), a mysterious new girl. Together, they uncover dark secrets about their respective families, their history and their town. (c) WB</j.0:synopsis>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#science_fiction_and_fantasy"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">58</j.0:audienceScore>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#warner_bros._pictures"/>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#rotten"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#romance"/>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">118</j.0:runtime>
+    <j.0:criticConsensus>Charming romantic leads and esteemed supporting cast aside, Beautiful Creatures is a plodding YA novel adaptation that feels watered down for the Twilight set.</j.0:criticConsensus>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#amour_(2012)">
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">127</j.0:runtime>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">83</j.0:audienceScore>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2012</j.0:year>
+    <j.0:synopsis>Georges and Anne are in their eighties. They are cultivated, retired music teachers. Their daughter, who is also a musician, lives abroad with her family. One day, Anne has an attack. The couple's bond of love is severely tested. -- (C) Official Site</j.0:synopsis>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#sony_pictures_classics"/>
+    <j.0:criticConsensus>With towering performances and an unflinching script from Michael Haneke, Amour represents an honest, heartwrenching depiction of deep love and responsibility.</j.0:criticConsensus>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#art_house_and_international"/>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771307454</j.0:movieID>
+    <j.0:title>Amour</j.0:title>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">93</j.0:audienceScore>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#drama"/>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#certified_fresh"/>
+    <j.0:mpaaRating>PG-13</j.0:mpaaRating>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#personName"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#western">
+    <j.0:genreName>Western</j.0:genreName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#musical_and_performing_arts">
+    <j.0:genreName>Musical &amp; Performing Arts</j.0:genreName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Publication">
+    <rdfs:subClassOf rdf:nodeID="A8"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#oz_the_great_and_powerful_(2013)">
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:mpaaRating>PG</j.0:mpaaRating>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">62</j.0:audienceScore>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">127</j.0:runtime>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:criticConsensus>It suffers from some tonal inconsistency and a deflated sense of wonder, but Oz the Great and Powerful still packs enough visual dazzle and clever wit to be entertaining in its own right.</j.0:criticConsensus>
+    <j.0:title>Oz the Great and Powerful</j.0:title>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#science_fiction_and_fantasy"/>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771211175</j.0:movieID>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">69</j.0:audienceScore>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#walt_disney_pictures"/>
+    <j.0:synopsis>Disney's fantastical adventure "Oz The Great and Powerful," directed by Sam Raimi, imagines the origins of L. Frank Baum's beloved wizard character. When Oscar Diggs (James Franco), a small-time circus magician with dubious ethics, is hurled away from dusty Kansas to the vibrant Land of Oz, he thinks he's hit the jackpot-fame and fortune are his for the taking-that is until he meets three witches, Theodora (Mila Kunis), Evanora (Rachel Weisz) and Glinda (Michelle Williams), who are not convinced he is the great wizard everyone's been expecting. Reluctantly drawn into the epic problems facing the Land of Oz and its inhabitants, Oscar must find out who is good and who is evil before it is too late. Putting his magical arts to use through illusion, ingenuity-and even a bit of wizardry-Oscar transforms himself not only into the great wizard but into a better man as well. When small-time magician Oscar Diggs (James Franco) pulls one flimflam too many, he finds himself hurled into the fantastical Land of Oz where he must somehow transform himself into the great wizard-and just maybe into a better man as well. -- (C) Walt Disney</j.0:synopsis>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#fresh"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#action_and_adventure">
+    <j.0:genreName>Action &amp; Adventure</j.0:genreName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#date">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#cbs_films">
+    <j.0:studioName>CBS Films</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#name">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#certified_fresh">
+    <j.0:ratingName>Certified Fresh</j.0:ratingName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Critic_Rating"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Review">
+    <rdfs:subClassOf rdf:nodeID="A0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#name"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#zero_dark_thirty_(2012)">
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">93</j.0:audienceScore>
+    <j.0:criticConsensus>Gripping, suspenseful, and brilliantly crafted, Zero Dark Thirty dramatizes the hunt for Osama bin Laden with intelligence and an eye for detail.</j.0:criticConsensus>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771249562</j.0:movieID>
+    <j.0:synopsis>For a decade, an elite team of intelligence and military operatives, working in secret across the globe, devoted themselves to a single goal: to find and eliminate Osama bin Laden. Zero Dark Thirty reunites the Oscar winning team of director-producer Kathryn Bigelow and writer-producer Mark Boal (The Hurt Locker) for the story of history's greatest manhunt for the world's most dangerous man. -- (C) Official Site</j.0:synopsis>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#columbia_pictures"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">81</j.0:audienceScore>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2012</j.0:year>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:mpaaRating>R</j.0:mpaaRating>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#certified_fresh"/>
+    <j.0:title>Zero Dark Thirty</j.0:title>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#drama"/>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">157</j.0:runtime>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#romance">
+    <j.0:genreName>Romance</j.0:genreName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#utv_motion_pictures">
+    <j.0:studioName>UTV Motion Pictures</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#horror">
+    <j.0:genreName>Horror</j.0:genreName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#phantom_(2013)">
+    <j.0:mpaaRating>R</j.0:mpaaRating>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</j.0:audienceScore>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#spilled"/>
+    <j.0:criticConsensus>A cast of solid actors do what they can to elevate the material, but Phantom's script is too clunky and devoid of tension to bear comparison to its thematic predecessors.</j.0:criticConsensus>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">50</j.0:audienceScore>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771315948</j.0:movieID>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">97</j.0:runtime>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#rotten"/>
+    <j.0:synopsis>Academy Award (R) nominee Ed Harris (A Beautiful Mind, The Abyss), David Duchovny ("The X-Files," "Californication") and William Fichtner (The Dark Knight, Black Hawk Down) star in PHANTOM, a Cold War-era suspense thriller about a Soviet submarine captain, haunted by his past, who is forced to lead a covert mission that could spark a global nuclear war. Written and directed by Todd Robinson (Lonely Hearts, White Squall) and inspired by true events, PHANTOM is a riveting deep-sea adventure about extraordinary men facing impossible choices.(c) Official Site</j.0:synopsis>
+    <j.0:title>Phantom</j.0:title>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#rcr_distribution"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#action_and_adventure"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#argo_(2012)">
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">96</j.0:audienceScore>
+    <j.0:mpaaRating>R</j.0:mpaaRating>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2012</j.0:year>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#drama"/>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771256128</j.0:movieID>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">93</j.0:audienceScore>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">120</j.0:runtime>
+    <j.0:title>Argo</j.0:title>
+    <j.0:criticConsensus>Tense, exciting, and often darkly comic, Argo recreates a historical event with vivid attention to detail and finely wrought characters.</j.0:criticConsensus>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#mystery_and_suspense"/>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#certified_fresh"/>
+    <j.0:synopsis>Based on true events, Argo chronicles the life-or-death covert operation to rescue six Americans, which unfolded behind the scenes of the Iran hostage crisis-the truth of which was unknown by the public for decades. On November 4, 1979, as the Iranian revolution reaches its boiling point, militants storm the U.S. embassy in Tehran, taking 52 Americans hostage. But, in the midst of the chaos, six Americans manage to slip away and find refuge in the home of the Canadian ambassador. Knowing it is only a matter of time before the six are found out and likely killed, a CIA "exfiltration" specialist named Tony Mendez (Ben Affleck) comes up with a risky plan to get them safely out of the country. A plan so incredible, it could only happen in the movies. -- (C) Warner Bros.</j.0:synopsis>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#warner_bros._pictures"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasCritic">
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#isCriticOf"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Review"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Critic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#jack_reacher_(2012)">
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#fresh"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#drama"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">72</j.0:audienceScore>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">62</j.0:audienceScore>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">130</j.0:runtime>
+    <j.0:criticConsensus>Jack Reacher is an above-average crime thriller with a smoothly charismatic performance from Tom Cruise.</j.0:criticConsensus>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2012</j.0:year>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#mystery_and_suspense"/>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#paramount_pictures"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:mpaaRating>PG-13</j.0:mpaaRating>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771249559</j.0:movieID>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:synopsis>Six shots. Five dead. One heartland city thrown into a state of terror. But within hours the cops have it solved: a slam-dunk case. Except for one thing. The accused man says: You got the wrong guy. Then he says: Get Reacher for me. And sure enough, ex-military investigator Jack Reacher is coming. He knows this shooter-a trained military sniper who never should have missed a shot. Reacher is certain something is not right-and soon the slam-dunk case explodes. Now Reacher is teamed with a beautiful young defense lawyer, moving closer to the unseen enemy who is pulling the strings. Reacher knows that no two opponents are created equal. This one has come to the heartland from his own kind of hell. And Reacher knows that the only way to take him down is to match his ruthlessness and cunning-and then beat him shot for shot. -- (C) Official Site</j.0:synopsis>
+    <j.0:title>Jack Reacher</j.0:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Actor">
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Critic"/>
+    <rdfs:subClassOf rdf:nodeID="A9"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#personName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#name"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#lionsgate/summit_entertainment">
+    <j.0:studioName>Lionsgate/Summit Entertainment</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Director">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Audience_Rating">
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Critic_Rating"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Rating"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#genreName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#name"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Genre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#the_weinstein_company">
+    <j.0:studioName>The Weinstein Company</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#ID">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#21_and_over_(2013)">
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">27</j.0:audienceScore>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#relativity_media"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">64</j.0:audienceScore>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">93</j.0:runtime>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771304584</j.0:movieID>
+    <j.0:synopsis>Straight-A college student Jeff Chang has always done what he was supposed to do. But when his two best friends Casey and Miller surprise him with a visit for his 21st birthday, Jeff Chang decides to do everything he wants to do for a change, even though his important medical school interview is early the next morning. What was supposed to be one beer becomes a night of humiliation, over indulgence and utter debauchery in this coming-of-drinking-age-comedy, from the writers of THE HANGOVER, about living youth to its fullest.</j.0:synopsis>
+    <j.0:mpaaRating>R</j.0:mpaaRating>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#rotten"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:title>21 And Over</j.0:title>
+    <j.0:criticConsensus>Though it strives to mimic The Hangover, 21 and Over is too predictable, too unabashedly profane, and too inconsistently funny to carry the torch.</j.0:criticConsensus>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#comedy"/>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hyde_park_on_hudson_(2012)">
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771242341</j.0:movieID>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">95</j.0:runtime>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#spilled"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">37</j.0:audienceScore>
+    <j.0:criticConsensus>Though bolstered by a thoroughly charming performance by Bill Murray in the central role, Hyde Park on Hudson is an FDR biopic that lets down both its audience and its subject.</j.0:criticConsensus>
+    <j.0:synopsis>In June 1939, President Franklin Delano Roosevelt (Bill Murray) and his wife Eleanor (Olivia Williams) host the King and Queen of England (Samuel West and Olivia Colman) for a weekend at the Roosevelt home at Hyde Park on Hudson, in upstate New York - the first-ever visit of a reigning English monarch to America. With Britain facing imminent war with Germany, the Royals are desperately looking to FDR for support. But international affairs must be juggled with the complexities of FDR's domestic establishment, as wife, mother, and mistresses all conspire to make the royal weekend an unforgettable one. -- (C) Focus</j.0:synopsis>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#focus_features"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#drama"/>
+    <j.0:title>Hyde Park on Hudson</j.0:title>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#comedy"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">33</j.0:audienceScore>
+    <j.0:mpaaRating>R</j.0:mpaaRating>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#rotten"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2012</j.0:year>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#20th_century_fox">
+    <j.0:studioName>20th Century Fox</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#name"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Actor"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasActor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#fox_searchlight_pictures">
+    <j.0:studioName>Fox Searchlight Pictures</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#identity_thief_(2013)">
+    <j.0:synopsis>Unlimited funds have allowed Diana (McCarthy) to live it up on the outskirts of Miami, where the queen of retail buys whatever strikes her fancy. There's only one glitch: The ID she's using to finance these sprees reads "Sandy Bigelow Patterson"....and it belongs to an accounts rep (Bateman) who lives halfway across the U.S. With only one week to hunt down the con artist before his world implodes, the real Sandy Bigelow Patterson heads south to confront the woman with an all-access pass to his life. And as he attempts to bribe, coax and wrangle her the 2,000 miles to Denver, one easy target will discover just how tough it is to get your name back. -- (C) Official Site</j.0:synopsis>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#comedy"/>
+    <j.0:title>Identity Thief</j.0:title>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#rotten"/>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#universal_pictures"/>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771270981</j.0:movieID>
+    <j.0:mpaaRating>R</j.0:mpaaRating>
+    <j.0:criticConsensus>Identity Thief's few laughs are attributable to Melissa McCarthy and Jason Bateman, who labor mightily to create a framework for the movie's undisciplined plotline.</j.0:criticConsensus>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">23</j.0:audienceScore>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">107</j.0:runtime>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">62</j.0:audienceScore>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#beasts_of_the_southern_wild_(2012)">
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#drama"/>
+    <j.0:title>Beasts of the Southern Wild</j.0:title>
+    <j.0:mpaaRating>PG-13</j.0:mpaaRating>
+    <j.0:synopsis>In a forgotten but defiant bayou community cut off from the rest of the world by a sprawling levee, a six-year-old girl exists on the brink of orphanhood. Buoyed by her childish optimism and extraordinary imagination, she believes that the natural world is in balance with the universe until a fierce storm changes her reality. Desperate to repair the structure of her world in order to save her ailing father and sinking home, this tiny hero must learn to survive unstoppable catastrophes of epic proportions. -- (C) Fox Searchlight</j.0:synopsis>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#certified_fresh"/>
+    <j.0:criticConsensus>Beasts of the Southern Wild is a fantastical, emotionally powerful journey and a strong case of filmmaking that values imagination over money.</j.0:criticConsensus>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">91</j.0:runtime>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2012</j.0:year>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">77</j.0:audienceScore>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">86</j.0:audienceScore>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#fox_searchlight"/>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771267232</j.0:movieID>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#mpaaRating">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#warner_bros.">
+    <j.0:studioName>Warner Bros.</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#tribeca_film">
+    <j.0:studioName>Tribeca Film</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#warm_bodies_(2013)">
+    <j.0:synopsis>A funny new twist on a classic love story, WARM BODIES is a poignant tale about the power of human connection. After a zombie epidemic, R (a highly unusual zombie) encounters Julie (a human survivor), and rescues her from a zombie attack. Julie sees that R is different from the other zombies, and as the two form a special relationship in their struggle for survival, R becomes increasingly more human - setting off an exciting, romantic, and often comical chain of events that begins to transform the other zombies and maybe even the whole lifeless world. (c) Summit</j.0:synopsis>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#certified_fresh"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">80</j.0:audienceScore>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">97</j.0:runtime>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771238285</j.0:movieID>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#lionsgate_films"/>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:mpaaRating>PG-13</j.0:mpaaRating>
+    <j.0:criticConsensus>Warm Bodies offers a sweet, well-acted spin on a genre that all too often lives down to its brain-dead protagonists.</j.0:criticConsensus>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">79</j.0:audienceScore>
+    <j.0:title>Warm Bodies</j.0:title>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#comedy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#spilled">
+    <j.0:ratingName>Spilled</j.0:ratingName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Audience_Rating"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Cast">
+    <rdfs:subClassOf rdf:nodeID="A10"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#quartet_(2013)">
+    <j.0:synopsis>Beecham House is abuzz. The rumor circling the halls is that the home for retired musicians is soon to play host to a new resident. Word is, it's a star. For Reginald Paget (Tom Courtenay), Wilfred Bond (Billy Connolly) and Cecily Robson (Pauline Collins) this sort of talk is par for the course at the gossipy home. But they're in for a special shock when the new arrival turns out to be none other than their former singing partner, Jean Horton (Maggie Smith). Her subsequent career as a star soloist, and the ego that accompanied it, split up their long friendship and ended her marriage to Reggie, who takes the news of her arrival particularly hard. Can the passage of time heal old wounds? And will the famous quartet be able to patch up their differences in time for Beecham House's gala concert? -- (C) Weinstein</j.0:synopsis>
+    <j.0:criticConsensus>It's sweet, gentle, and predictable to a fault, but Dustin Hoffman's affectionate direction and the talented cast's amiable charm make Quartet too difficult to resist.</j.0:criticConsensus>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">79</j.0:audienceScore>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#comedy"/>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">97</j.0:runtime>
+    <j.0:title>Quartet</j.0:title>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#the_weinstein_co."/>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771269968</j.0:movieID>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:mpaaRating>PG-13</j.0:mpaaRating>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</j.0:audienceScore>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#certified_fresh"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#drama"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#fox_searchlight">
+    <j.0:studioName>Fox Searchlight</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#no_(2013)">
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:title>No</j.0:title>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#drama"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">84</j.0:audienceScore>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">110</j.0:runtime>
+    <j.0:mpaaRating>R</j.0:mpaaRating>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771307335</j.0:movieID>
+    <j.0:criticConsensus>No uses its history-driven storyline to offer a bit of smart, darkly funny perspective on modern democracy and human nature.</j.0:criticConsensus>
+    <j.0:synopsis>In 1988, Chilean military dictator Augusto Pinochet, due to international pressure, is forced to call a plebiscite on his presidency. The country will vote YES or NO to Pinochet extending his rule for another eight years. Opposition leaders for the NO persuade a brash young advertising executive, Rene Saavedra (Gael Garcia Bernal), to spearhead their campaign. Against all odds, with scant resources and under scrutiny by the despot's minions, Saavedra and his team devise an audacious plan to win the election and set Chile free. (c) Sony Classics</j.0:synopsis>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">92</j.0:audienceScore>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#art_house_and_international"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#certified_fresh"/>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#sony_pictures_classics"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hansel_and_gretel:_witch_hunters_(2013)">
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</j.0:runtime>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#rotten"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#action_and_adventure"/>
+    <j.0:synopsis>After getting a taste for blood as children, Hansel (Jeremy Renner) and Gretel (Gemma Arterton) have become the ultimate vigilantes, hell bent on retribution. Now, unbeknownst to them, Hansel and Gretel have become the hunted, and must face an evil far greater than witches...their past. -- (C) Paramount</j.0:synopsis>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:criticConsensus>Alternately bloody and silly, Hansel and Gretel: Witch Hunters fails as both a fantasy adventure and as a parody of same.</j.0:criticConsensus>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:title>Hansel and Gretel: Witch Hunters</j.0:title>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">61</j.0:audienceScore>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#paramount_pictures/mgm"/>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#comedy"/>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771225176</j.0:movieID>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</j.0:audienceScore>
+    <j.0:mpaaRating>R</j.0:mpaaRating>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Rating">
+    <rdfs:subClassOf rdf:nodeID="A11"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Person">
+    <rdfs:subClassOf rdf:nodeID="A7"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#isActorIn">
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasActor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasCast">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Cast"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#ratingName"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#dead_man_down_(2013)">
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#rotten"/>
+    <j.0:title>Dead Man Down</j.0:title>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">63</j.0:audienceScore>
+    <j.0:criticConsensus>While the fine cast keeps Dead Man Down watchable throughout, the film is weighted down by absurd plot twists and a slack pace.</j.0:criticConsensus>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">38</j.0:audienceScore>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771310807</j.0:movieID>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">110</j.0:runtime>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#mystery_and_suspense"/>
+    <j.0:mpaaRating>R</j.0:mpaaRating>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:synopsis>Niels Arden Oplev, the acclaimed director of the original The Girl with the Dragon Tattoo, makes his American theatrical debut with the new action thriller, DEAD MAN DOWN. Colin Farrell and Noomi Rapace star as two strangers who are irresistibly drawn to one another by their mutual desire for revenge. The film co-stars Academy Award (R) nominee Terrence Howard and Dominic Cooper, from a screenplay by J.H.Wyman (Fringe). (c) Film District</j.0:synopsis>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#filmdistrict"/>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#dreamworks_pictures">
+    <j.0:studioName>Dreamworks Pictures</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#characterName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#name"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#relativity_media">
+    <j.0:studioName>Relativity Media</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#lincoln_(2012)">
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:mpaaRating>PG-13</j.0:mpaaRating>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#dreamworks_pictures"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">85</j.0:audienceScore>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">149</j.0:runtime>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#certified_fresh"/>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">770682079</j.0:movieID>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">89</j.0:audienceScore>
+    <j.0:title>Lincoln</j.0:title>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#drama"/>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2012</j.0:year>
+    <j.0:synopsis>Steven Spielberg directs Daniel Day-Lewis in Lincoln, a revealing drama that focuses on the 16th President's tumultuous final months in office. In a nation divided by war and the strong winds of change, Lincoln pursues a course of action designed to end the war, unite the country and abolish slavery. With the moral courage and fierce determination to succeed, his choices during this critical moment will change the fate of generations to come. -- (C) Walt Disney</j.0:synopsis>
+    <j.0:criticConsensus>Daniel Day-Lewis characteristically delivers in this witty, dignified portrait that immerses the audience in its world and entertains even as it informs.</j.0:criticConsensus>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#the_last_exorcism_part_ii_(2013)">
+    <j.0:title>The Last Exorcism Part II</j.0:title>
+    <j.0:mpaaRating>PG-13</j.0:mpaaRating>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#rotten"/>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#cbs_films"/>
+    <j.0:synopsis>Continuing where the first film left off, Nell Sweetzer (Ashley Bell) is found terrified and alone in rural Louisiana. Back in the relative safety of New Orleans, Nell realizes that she can't remember entire portions of the previous months only that she is the last surviving member of her family. Just as Nell begins the difficult process of starting a new life, the evil force that once possessed her is back with other, unimaginably horrific plans that mean her last exorcism was just the beginning. (c) CBS Films</j.0:synopsis>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">36</j.0:audienceScore>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#mystery_and_suspense"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</j.0:audienceScore>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">88</j.0:runtime>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#horror"/>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#spilled"/>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771321134</j.0:movieID>
+    <j.0:criticConsensus>null</j.0:criticConsensus>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#filmdistrict">
+    <j.0:studioName>FilmDistrict</j.0:studioName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Studio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#a_good_day_to_die_hard_(2013)">
+    <j.0:mpaaRating>R</j.0:mpaaRating>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#spilled"/>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:title>A Good Day To Die Hard</j.0:title>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#20th_century_fox"/>
+    <j.0:synopsis>John McClane (Bruce Willis) heads to Russia in this fifth installment of the Die Hard film series. Skip Woods (The A-Team) provides the script, with Max Payne's John Moore directing. ~ Jeremy Wheeler, Rovi</j.0:synopsis>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#action_and_adventure"/>
+    <j.0:criticConsensus>A Good Day to Die Hard is the weakest entry in a storied franchise, and not even Bruce Willis' smirking demeanor can enliven a cliched, uninspired script.</j.0:criticConsensus>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771257607</j.0:movieID>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">46</j.0:audienceScore>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</j.0:audienceScore>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">110</j.0:runtime>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#rotten"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#synopsis">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#characterName"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#escape_from_planet_earth_3d_(2013)">
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771267600</j.0:movieID>
+    <j.0:criticConsensus>null</j.0:criticConsensus>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#comedy"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:title>Escape From Planet Earth 3D</j.0:title>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">89</j.0:runtime>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#science_fiction_and_fantasy"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</j.0:audienceScore>
+    <j.0:synopsis>The 3D animated family comedy catapults moviegoers to planet Baab where admired astronaut Scorch Supernova (Brendan Fraser) is a national hero to the blue alien population. A master of daring rescues, Scorch pulls off astonishing feats with the quiet aid of his nerdy, by-the-rules brother, Gary (Rob Corddry), head of mission control at BASA. When BASA's no-nonsense chief Lena (Jessica Alba) informs the brothers of an SOS from a notoriously dangerous planet, Scorch rejects Gary's warnings and bounds off for yet another exciting mission. But when Scorch finds himself caught in a fiendish trap set by the evil Shanker (William Shatner) it's up to scrawny, risk-adverse Gary to do the real rescuing. As the interplanetary stakes rise to new heights, Gary is left to save his brother, his planet, his beloved wife Kira (Sarah Jessica Parker) and their adventure hungry son Kip. (c) Weinstein</j.0:synopsis>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#rotten"/>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#the_weinstein_co."/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#animation"/>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#action_and_adventure"/>
+    <j.0:mpaaRating>PG</j.0:mpaaRating>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">24</j.0:audienceScore>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#audienceScore">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#score"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#comedy">
+    <j.0:genreName>Comedy</j.0:genreName>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#kai_po_che!_(2013)">
+    <j.0:mpaaRating>Unrated</j.0:mpaaRating>
+    <j.0:hasGenre rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#art_house_and_international"/>
+    <j.0:title>Kai Po Che!</j.0:title>
+    <j.0:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#int">120</j.0:runtime>
+    <j.0:year rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2013</j.0:year>
+    <j.0:hasAudienceRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#upright"/>
+    <j.0:hasCriticRating rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#rotten"/>
+    <j.0:movieID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">771306559</j.0:movieID>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">81</j.0:audienceScore>
+    <rdf:type rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#Movie"/>
+    <j.0:synopsis>Synopsis: Best friends Ishaan, Omi and Govind - young, ambitious and restless - are trying to make a mark in the India of the early 2000's. These are exciting times - a new millennium has just dawned, India's a nuclear power and ostensibly shining - a perfect place for the 3 Ahmedabad boys to start a business that could be their ticket to fame and riches. In a country where cricket is religion, they hit upon a brilliant plan - to start a training academy that could produce India's next sporting superstars! What follows is without doubt the greatest adventure of their lives, as they attempt to navigate the big hurdles in the path of fulfilling their dreams. (c) UTV</j.0:synopsis>
+    <j.0:criticConsensus>null</j.0:criticConsensus>
+    <j.0:hasStudio rdf:resource="http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#utv_motion_pictures"/>
+    <j.0:audienceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#int">57</j.0:audienceScore>
+  </rdf:Description>
+</rdf:RDF>
