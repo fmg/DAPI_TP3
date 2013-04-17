@@ -5,7 +5,6 @@
 package ontology;
 
 import com.hp.hpl.jena.ontology.Individual;
-import com.hp.hpl.jena.ontology.OntClass;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.logging.Level;
@@ -58,11 +57,7 @@ public class OntologyFiller {
         for(int i = 0; i < nList.getLength(); i++){
             Element eElement = (Element)nList.item(i);
             addMovieToOntology(eElement);
-        }
-        
-          
-        
-            
+        }     
             
         myOnt.writeOntologyToFile();
     }
@@ -138,19 +133,21 @@ public class OntologyFiller {
         
         
         //abridged_directors
+        ArrayList<String> directorArray = new ArrayList<String>();
         NodeList directors = ((Element) movie.getElementsByTagName("abridged_directors").item(0)).getElementsByTagName("director");
         for (int i = 0; i < directors.getLength(); i++) {
 
             String movie_director = directors.item(i).getTextContent();
             if (!movie_director.equals("-")) {
-                //doc.add(new TextField(DIRECTOR_NAME, movie_director, Field.Store.YES));
+                directorArray.add(movie_director);
             }
         }
-
+        myOnt.addDirectorsToMovieIndividual(movieIndvidual, directorArray);
 
 
 
         //reviews
+        ArrayList<Review> reviewArray = new ArrayList<Review>();
         NodeList reviews = ((Element) movie.getElementsByTagName("reviews").item(0)).getElementsByTagName("review");
         for (int i = 0; i < reviews.getLength(); i++) {
 
@@ -163,14 +160,9 @@ public class OntologyFiller {
             String rev_publication = review.getElementsByTagName("publication").item(0).getTextContent();
             String rev_quote = review.getElementsByTagName("quote").item(0).getTextContent();
 
-
-            if (!rev_original_score.equals("-")) {
-                //doc.add(new StringField(REVIEW_ORIGINAL_SCORE, rev_original_score, Field.Store.NO));
-            }
-            
-
+            reviewArray.add(new Review(rev_critic, rev_date, rev_original_score, rev_freshness, rev_publication, rev_quote));
         }
-
+        myOnt.addReviewsToMovieIndividual(movieIndvidual, reviewArray, title, year);
         
     }
     

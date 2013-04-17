@@ -4,14 +4,10 @@
  */
 package ontology;
 
-import com.hp.hpl.jena.datatypes.RDFDatatype;
 import com.hp.hpl.jena.ontology.Individual;
 import com.hp.hpl.jena.ontology.OntClass;
 import com.hp.hpl.jena.ontology.OntModel;
-import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
-import com.hp.hpl.jena.rdf.model.Resource;
-import com.hp.hpl.jena.rdf.model.ResourceFactory;
 import com.hp.hpl.jena.util.FileManager;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -37,10 +33,14 @@ public class myOntology {
     public final static String ONT_CLASS_CRITIC_RATING = "Critic_Rating";
     public final static String ONT_CLASS_STUDIO = "Studio";
     public final static String ONT_CLASS_ACTOR = "Actor";
+    public final static String ONT_CLASS_DIRECTOR = "Director";
+    public final static String ONT_CLASS_REVIEW = "Review";
+    public final static String ONT_CLASS_CRITIC = "Critic";
+    public final static String ONT_CLASS_PUBLICATION = "Publication";
     
     
     
-    
+       
     //Ontology obtect properties 
     public final static String ONT_OBP_GENRE = "hasGenre";
     public final static String ONT_OBP_CRITIC_RATING = "hasCriticRating";
@@ -48,6 +48,10 @@ public class myOntology {
     public final static String ONT_OBP_STUDIO = "hasStudio";
     public final static String ONT_OBP_CAST = "hasCast";
     public final static String ONT_OBP_ACTOR = "hasActor";
+    public final static String ONT_OBP_DIRECTOR = "hasDirector";
+    public final static String ONT_OBP_REVIEW = "hasReview";
+    public final static String ONT_OBP_PUBLICATION = "hasPublication";
+    public final static String ONT_OBP_CRITIC = "hasCritic";
 
     
     
@@ -69,6 +73,11 @@ public class myOntology {
     public final static String ONT_DTP_PERSON_NAME = "personName";
     public final static String ONT_DTP_ACTOR_ID = "actorID";
     public final static String ONT_DTP_CHARACTER_NAME = "characterName";
+    
+    public final static String ONT_DTP_DATE = "date";
+    public final static String ONT_DTP_REVIEW_SCORE = "reviewScore";
+    public final static String ONT_DTP_QUOTE = "quote";
+    public final static String ONT_DTP_PUBLICATION_NAME = "publicationName";
     
     
     
@@ -168,7 +177,7 @@ public class myOntology {
         movieIndv.addLiteral(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_CRITIC_SCORE), new Integer(critics_score));
         
         //critic rating
-        System.out.println(critics_rating + " ->" + title);
+        //System.out.println(critics_rating + " ->" + title);
         Individual crIndv = myOntModel.getIndividual(ONTOLOGY_NS + normalizeString(critics_rating));
             if(crIndv == null){
                 crIndv = createIndividualFromClass(ONT_CLASS_CRITIC_RATING, ONTOLOGY_NS + normalizeString(critics_rating));
@@ -232,15 +241,89 @@ public class myOntology {
             
         }
         
-        
-        
         movieIndv.setPropertyValue(myOntModel.getProperty(ONTOLOGY_NS + ONT_OBP_CAST), castIndv);
         
     }
     
     
+    public void addDirectorsToMovieIndividual(Individual movieIndv, ArrayList<String> directors){
+        
+        for(String director:directors){
+                        
+            Individual dirIndv = myOntModel.getIndividual(ONTOLOGY_NS + normalizeString(director));
+            if(dirIndv == null){
+                dirIndv = createIndividualFromClass(ONT_CLASS_DIRECTOR, ONTOLOGY_NS + normalizeString(director));
+                dirIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_PERSON_NAME), director);         
+            }
+            
+            movieIndv.addProperty(myOntModel.getProperty(ONTOLOGY_NS + ONT_OBP_DIRECTOR), dirIndv);
+            
+        }
+        
+    }
+    
+    
+    
+    public void addReviewsToMovieIndividual(Individual movieIndv, ArrayList<Review> reviews, String movieTitle, int year){
+
+        
+        for(Review rev: reviews){
+        
+            OntClass revClass = myOntModel.getOntClass(ONTOLOGY_NS + ONT_CLASS_REVIEW);
+            Individual revIndv = revClass.createIndividual(ONTOLOGY_NS + "review_"+ normalizeString(rev.getPublication())
+                    + "_("+normalizeString(movieTitle) + "_(" + year +"))");//same title, can be uses, but not in the same year
+
+
+            //critic
+            if(!normalizeString(rev.getCritic()).equals("")){
+                Individual criticIndv = myOntModel.getIndividual(ONTOLOGY_NS + normalizeString(rev.getCritic()));
+                if(criticIndv == null){
+                    criticIndv = createIndividualFromClass(ONT_CLASS_CRITIC, ONTOLOGY_NS + normalizeString(rev.getCritic()));
+                    criticIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_PERSON_NAME), rev.getCritic());         
+                }
+                revIndv.addProperty(myOntModel.getProperty(ONTOLOGY_NS + ONT_OBP_CRITIC), criticIndv);
+            }
+            
+            //date
+            revIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_DATE), rev.getDate());
+            
+            //original score
+            revIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_REVIEW_SCORE), rev.getOriginal_score());
+            
+            //freshness
+            if(!normalizeString(rev.getFreshness()).equals("")){
+                Individual ratingIndv = myOntModel.getIndividual(ONTOLOGY_NS + normalizeString(rev.getFreshness()));
+                if(ratingIndv == null){
+                    ratingIndv = createIndividualFromClass(ONT_CLASS_CRITIC_RATING, ONTOLOGY_NS + normalizeString(rev.getFreshness()));
+                    ratingIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_RATING_NAME), rev.getFreshness());         
+                }
+                revIndv.addProperty(myOntModel.getProperty(ONTOLOGY_NS + ONT_OBP_CRITIC_RATING), ratingIndv);
+            }
+            
+            
+            //publication
+            Individual publIndv = myOntModel.getIndividual(ONTOLOGY_NS + normalizeString(rev.getPublication()));
+            if(publIndv == null){
+                publIndv = createIndividualFromClass(ONT_CLASS_PUBLICATION, ONTOLOGY_NS + normalizeString(rev.getPublication()));
+                publIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_PERSON_NAME), rev.getPublication());         
+            }
+            revIndv.addProperty(myOntModel.getProperty(ONTOLOGY_NS + ONT_OBP_PUBLICATION), publIndv);
+
+            
+            //quote
+            revIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_QUOTE), rev.getQuote());
+
+        
+            movieIndv.addProperty(myOntModel.getProperty(ONTOLOGY_NS + ONT_OBP_REVIEW), revIndv);
+        }
+        
+    }
+    
+    
     private String normalizeString(String str){
-        return (str.replaceAll(" ", "_").toLowerCase()).replaceAll("&", "and").replace("\"", "");
+        
+        return str.toLowerCase().replaceAll("\n", "").replaceAll(" ", "_").replaceAll("&", "and").replaceAll("\"", "");
+        
     }
     
     
