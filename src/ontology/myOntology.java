@@ -145,17 +145,17 @@ public class myOntology {
         movieIndv.addLiteral(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_MOVIE_ID), movieID);
         
         //title
-        movieIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_TITLE), title);
+        movieIndv.addLiteral(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_TITLE), title);
         
         //year
-        movieIndv.addLiteral(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_YEAR), year);      
+        movieIndv.addLiteral(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_YEAR), new Integer(year));      
         
         //genres
         for(String genre:genres){
             Individual genreIndv = myOntModel.getIndividual(ONTOLOGY_NS + normalizeString(genre));
             if(genreIndv == null){
                 genreIndv = createIndividualFromClass(ONT_CLASS_GENRE, ONTOLOGY_NS + normalizeString(genre));
-                genreIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_GENRE_NAME), genre);
+                genreIndv.addLiteral(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_GENRE_NAME), genre);
             }   
             movieIndv.addProperty(myOntModel.getProperty(ONTOLOGY_NS + ONT_OBP_GENRE), genreIndv);
         }    
@@ -166,10 +166,10 @@ public class myOntology {
         }
         
         //mpaRating
-        movieIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_MPAA_RATING), mpaaRating);
+        movieIndv.addLiteral(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_MPAA_RATING), mpaaRating);
         
         //synopsis
-        movieIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_SYNOPSIS), synopsis);
+        movieIndv.addLiteral(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_SYNOPSIS), synopsis);
                 
         
         
@@ -181,7 +181,7 @@ public class myOntology {
         Individual crIndv = myOntModel.getIndividual(ONTOLOGY_NS + normalizeString(critics_rating));
             if(crIndv == null){
                 crIndv = createIndividualFromClass(ONT_CLASS_CRITIC_RATING, ONTOLOGY_NS + normalizeString(critics_rating));
-                crIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_RATING_NAME), critics_rating);
+                crIndv.addLiteral(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_RATING_NAME), critics_rating);
             }   
         movieIndv.addProperty(myOntModel.getProperty(ONTOLOGY_NS + ONT_OBP_CRITIC_RATING), crIndv);
         
@@ -194,20 +194,20 @@ public class myOntology {
         Individual arIndv = myOntModel.getIndividual(ONTOLOGY_NS + normalizeString(audience_rating));
             if(arIndv == null){
                 arIndv = createIndividualFromClass(ONT_CLASS_AUDIENCE_RATING, ONTOLOGY_NS + normalizeString(audience_rating));
-                arIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_RATING_NAME), audience_rating);
+                arIndv.addLiteral(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_RATING_NAME), audience_rating);
             }   
         movieIndv.setPropertyValue(myOntModel.getProperty(ONTOLOGY_NS + ONT_OBP_AUDIENCE_RATING), arIndv);        
         
         
         
         //critic_consensus
-        movieIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_CRITIC_CONSENSUS), critics_consensus);
+        movieIndv.addLiteral(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_CRITIC_CONSENSUS), critics_consensus);
         
         //studio
         Individual studioIndv = myOntModel.getIndividual(ONTOLOGY_NS + normalizeString(studio));
             if(studioIndv == null){
                 studioIndv = createIndividualFromClass(ONT_CLASS_STUDIO, ONTOLOGY_NS + normalizeString(studio));
-                studioIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_STUDIO_NAME), studio);
+                studioIndv.addLiteral(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_STUDIO_NAME), studio);
             }   
         movieIndv.setPropertyValue(myOntModel.getProperty(ONTOLOGY_NS + ONT_OBP_STUDIO), studioIndv);    
         
@@ -228,12 +228,12 @@ public class myOntology {
             Individual actorIndv = myOntModel.getIndividual(ONTOLOGY_NS + normalizeString(a.getName()));
             if(actorIndv == null){
                 actorIndv = createIndividualFromClass(ONT_CLASS_ACTOR, ONTOLOGY_NS + normalizeString(a.getName()));
-                actorIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_PERSON_NAME), a.getName());         
+                actorIndv.addLiteral(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_PERSON_NAME), a.getName());         
             }
             
             for(String chr: a.getCharacters()){
                 String tmp =  chr + " " + "("+ movieTitle + " ("+ year+ ")" + ")";
-                actorIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS+ ONT_DTP_CHARACTER_NAME), 
+                actorIndv.addLiteral(myOntModel.getDatatypeProperty(ONTOLOGY_NS+ ONT_DTP_CHARACTER_NAME), 
                         tmp);
             }
             
@@ -253,7 +253,7 @@ public class myOntology {
             Individual dirIndv = myOntModel.getIndividual(ONTOLOGY_NS + normalizeString(director));
             if(dirIndv == null){
                 dirIndv = createIndividualFromClass(ONT_CLASS_DIRECTOR, ONTOLOGY_NS + normalizeString(director));
-                dirIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_PERSON_NAME), director);         
+                dirIndv.addLiteral(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_PERSON_NAME), director);         
             }
             
             movieIndv.addProperty(myOntModel.getProperty(ONTOLOGY_NS + ONT_OBP_DIRECTOR), dirIndv);
@@ -279,23 +279,23 @@ public class myOntology {
                 Individual criticIndv = myOntModel.getIndividual(ONTOLOGY_NS + normalizeString(rev.getCritic()));
                 if(criticIndv == null){
                     criticIndv = createIndividualFromClass(ONT_CLASS_CRITIC, ONTOLOGY_NS + normalizeString(rev.getCritic()));
-                    criticIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_PERSON_NAME), rev.getCritic());         
+                    criticIndv.addLiteral(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_PERSON_NAME), rev.getCritic());         
                 }
                 revIndv.addProperty(myOntModel.getProperty(ONTOLOGY_NS + ONT_OBP_CRITIC), criticIndv);
             }
             
             //date
-            revIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_DATE), rev.getDate());
+            revIndv.addLiteral(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_DATE), rev.getDate());
             
             //original score
-            revIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_REVIEW_SCORE), rev.getOriginal_score());
+            revIndv.addLiteral(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_REVIEW_SCORE), rev.getOriginal_score());
             
             //freshness
             if(!normalizeString(rev.getFreshness()).equals("")){
                 Individual ratingIndv = myOntModel.getIndividual(ONTOLOGY_NS + normalizeString(rev.getFreshness()));
                 if(ratingIndv == null){
                     ratingIndv = createIndividualFromClass(ONT_CLASS_CRITIC_RATING, ONTOLOGY_NS + normalizeString(rev.getFreshness()));
-                    ratingIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_RATING_NAME), rev.getFreshness());         
+                    ratingIndv.addLiteral(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_RATING_NAME), rev.getFreshness());         
                 }
                 revIndv.addProperty(myOntModel.getProperty(ONTOLOGY_NS + ONT_OBP_CRITIC_RATING), ratingIndv);
             }
@@ -305,13 +305,13 @@ public class myOntology {
             Individual publIndv = myOntModel.getIndividual(ONTOLOGY_NS + normalizeString(rev.getPublication()));
             if(publIndv == null){
                 publIndv = createIndividualFromClass(ONT_CLASS_PUBLICATION, ONTOLOGY_NS + normalizeString(rev.getPublication()));
-                publIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_PERSON_NAME), rev.getPublication());         
+                publIndv.addLiteral(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_PERSON_NAME), rev.getPublication());         
             }
             revIndv.addProperty(myOntModel.getProperty(ONTOLOGY_NS + ONT_OBP_PUBLICATION), publIndv);
 
             
             //quote
-            revIndv.addProperty(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_QUOTE), rev.getQuote());
+            revIndv.addLiteral(myOntModel.getDatatypeProperty(ONTOLOGY_NS + ONT_DTP_QUOTE), rev.getQuote());
 
         
             movieIndv.addProperty(myOntModel.getProperty(ONTOLOGY_NS + ONT_OBP_REVIEW), revIndv);

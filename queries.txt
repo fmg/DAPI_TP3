@@ -1,0 +1,47 @@
+#OBTER TODOS OS FILMES E TITULOS
+SELECT ?x ?title
+WHERE { ?x <http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#title> ?title }
+
+
+#FILMES DE "2013"
+SELECT ?x ?title ?year
+WHERE { 
+	?x <http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#title> ?title .
+	?x <http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#year> ?year
+	FILTER (?year >= 2013)
+
+}
+
+
+#CAST DE UM FILME
+SELECT ?title ?actorname
+WHERE { 
+	?movie <http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#title> ?title .
+	FILTER regex(?title, "Argo", "i") .
+	?movie <http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasCast> ?cast .
+	?cast  <http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasActor> ?actor .
+	?actor  <http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#personName> ?actorname .
+}
+
+
+#personagens interpretadas por um actor
+SELECT ?actor ?actorname ?charname
+WHERE { 
+	
+	?actor  <http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#personName> ?actorname .
+	FILTER regex(?actorname, "Mila Kunis", "i") .
+	?actor  <http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#characterName> ?charname
+}
+
+
+
+#Filmes que um actor entrou
+SELECT ?actor ?actorname ?movie ?movietitle
+WHERE { 
+	
+	?movie  <http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#title> ?movietitle  .
+	?movie  <http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasCast> ?cast  . 
+	?cast  <http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#hasActor> ?actor  .
+	?actor  <http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#personName> ?actorname .
+	FILTER regex(?actorname, "Mila Kunis", "i") . 
+}
