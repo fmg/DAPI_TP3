@@ -68,7 +68,7 @@ public class myOntology {
 
     public final static String ONT_DTP_RATING_NAME = "ratingName";
     public final static String ONT_DTP_AUDIENCE_SCORE = "audienceScore";
-    public final static String ONT_DTP_CRITIC_SCORE = "audienceScore";
+    public final static String ONT_DTP_CRITIC_SCORE = "criticScore";
 
     public final static String ONT_DTP_PERSON_NAME = "personName";
     public final static String ONT_DTP_ACTOR_ID = "actorID";

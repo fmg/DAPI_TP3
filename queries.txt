@@ -34,6 +34,15 @@ WHERE {
 }
 
 
+#todas as personagens interpretadas por todos os actores
+SELECT ?actor ?actorname ?charname
+WHERE { 
+	?actor  <http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#characterName> ?charname .
+	?actor  <http://www.semanticweb.org/desktop/ontologies/2013/3/movieontology.owl#personName> ?actorname
+	
+}
+
+
 
 #Filmes que um actor entrou
 SELECT ?actor ?actorname ?movie ?movietitle
